@@ -22,9 +22,6 @@ class CouchbaseDatabaseAdapter(StorageAdapter):
         from couchbase.cluster import Cluster
         from couchbase.cluster import PasswordAuthenticator
 
-        #from pymongo import MongoClient
-        #from pymongo.errors import OperationFailure
-
         self.database_uri = kwargs.get(
             'database_uri', 'couchbase://localhost'
         )
